@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/$USER/flask-to-fastapi
+    - /bin/cp -R . $DEPLOYPATH
+    - cd $DEPLOYPATH && pip install --user -r requirements.txt
