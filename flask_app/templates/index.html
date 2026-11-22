@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-  <h1>lala</h1>
-  {{ data }}
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask example</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Flask example</h1>
+    <p>{{ data }}</p>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
 </html>

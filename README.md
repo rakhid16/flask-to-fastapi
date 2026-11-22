@@ -1,19 +1,30 @@
-# Usage
-1. Clone or pull this repository
-2. Run this command
-```
-$ pip3 install -r requirements.txt
+# Flask to FastAPI
+
+This repository contains equivalent sample applications built with Flask and
+FastAPI. Both applications serve a page and use the same text-classification
+model.
+
+## Installation
+
+From the repository root, install the dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
 ```
 
-# Run Flask App
-```
-$ cd flask_app
-$ python3 main.py
+## Run the Flask app
+
+```bash
+python3 flask_app/main.py
 ```
 
-# Run FastAPI App
+The app runs at <http://127.0.0.1:5000>.
+
+## Run the FastAPI app
+
+```bash
+uvicorn fastapi_app.main:app --reload
 ```
-$ cd fastapi_app
-$ uvicorn main:app --reload
-```
-FastAPI Swagger UI -> http://localhost:8000/docs
+
+The app runs at <http://127.0.0.1:8000>. Interactive API documentation is
+available at <http://127.0.0.1:8000/docs>.
